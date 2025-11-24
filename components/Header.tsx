@@ -29,9 +29,6 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/products" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
-              Products
-            </Link>
             {isAuthenticated && user?.role === 'admin' && (
               <Link href="/admin" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
                 Admin
@@ -90,13 +87,6 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <Link
-              href="/products"
-              className="block text-gray-700 dark:text-gray-200 hover:text-blue-600"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Products
-            </Link>
             {isAuthenticated && user?.role === 'admin' && (
               <Link
                 href="/admin"
