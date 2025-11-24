@@ -37,7 +37,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <span className="text-sm font-medium">
-                ✨ Welcome to the Future of Shopping
+                Welcome to the Future of Shopping
               </span>
             </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/products">
+              <Link href="localhost:8888/v1/products">
                 <Button
                   variant="primary"
                   size="lg"
@@ -64,7 +64,7 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link href="/auth/register">
+              <Link href="localhost:8888/v1/user">
                 <Button
                   variant="ghost"
                   size="lg"
@@ -158,7 +158,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
               Featured Products
             </h2>
-            <Link href="/products">
+            <Link href="localhost:8888/v1/products">
               <Button variant="ghost">
                 View All
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -208,7 +208,7 @@ export default function Home() {
           <p className="text-xl mb-8 text-blue-100">
             Join thousands of satisfied customers today
           </p>
-          <Link href="/auth/register">
+          <Link href="localhost:8888/v1/user">
             <Button
               variant="primary"
               size="lg"
