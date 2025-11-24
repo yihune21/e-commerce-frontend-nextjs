@@ -54,7 +54,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="localhost:8888/v1/products">
+              <Link href="/products">
                 <Button
                   variant="primary"
                   size="lg"
@@ -64,7 +64,7 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link href="localhost:8888/v1/user">
+              <Link href="/auth/register">
                 <Button
                   variant="ghost"
                   size="lg"
@@ -158,7 +158,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
               Featured Products
             </h2>
-            <Link href="localhost:8888/v1/products">
+            <Link href="/products">
               <Button variant="ghost">
                 View All
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -208,7 +208,7 @@ export default function Home() {
           <p className="text-xl mb-8 text-blue-100">
             Join thousands of satisfied customers today
           </p>
-          <Link href="localhost:8888/v1/user">
+          <Link href="/auth/register">
             <Button
               variant="primary"
               size="lg"
